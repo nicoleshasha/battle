@@ -1,5 +1,5 @@
-<h1><%= @P1Name %> vs. <%= @P2Name %></h1>
-<%=@P2Name%> = <%= @P2hp %>HP 
+<h1><%= @P1.name %> vs. <%= @P2.name %></h1>
+<%=@P2.name%> = <%= @P2.hp %>HP
 <form method="get" action="/attack">
-	<input type="submit" value="Attack <%= @P2Name %>">
+	<input type="submit" value="Attack <%= @P2.name %>">
 </form>
