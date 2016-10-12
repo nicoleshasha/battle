@@ -1,5 +1,5 @@
 <h1><%= @game.player1.name %> vs. <%= @game.player2.name %></h1>
 <%=@game.player2.name%> = <%= @game.player2.hp %>HP
 <form method="get" action="/attack">
-	<input type="submit" value="Attack <%= @game.player2.name %>">
+	<input type="submit" value="Attack <%= @game.target_player.name %>">
 </form>

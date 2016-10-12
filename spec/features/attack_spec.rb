@@ -13,3 +13,13 @@ feature 'attacking players' do
     expect(page).to have_text "Asif = 90HP"
   end
 end
+
+
+feature 'swapping turns' do
+  scenario 'player 2 attacks after player 1' do
+    sign_in_and_play
+    click_button "Attack Asif"
+    visit '/play'
+    find_button("Attack Nicole")
+  end
+end
