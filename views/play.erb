@@ -1,5 +1,5 @@
 <h1><%= @P1Name %> vs. <%= @P2Name %></h1>
-<%=@P2Name%> = 100HP 
+<%=@P2Name%> = <%= @P2hp %>HP 
 <form method="get" action="/attack">
 	<input type="submit" value="Attack <%= @P2Name %>">
 </form>
