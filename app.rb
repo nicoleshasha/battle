@@ -2,9 +2,15 @@ require 'sinatra/base'
 
 class Battle < Sinatra::Base
   get '/' do
-    'Hello Battle!'
+    erb :index
   end
 
-  # start the server if ruby file executed directly
+  post '/names' do
+    @P1Name = params[:P1Name]
+    @P2Name = params[:P2Name]
+    erb :play
+  end
+
+
   run! if app_file == $0
 end
