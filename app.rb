@@ -19,6 +19,8 @@ class Battle < Sinatra::Base
   end
 
   get '/attack' do
+    @P1Name = session[:P1Name]
+    @P2Name = session[:P2Name]
     erb :attack
   end
 
